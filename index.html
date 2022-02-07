@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons.flaticon.com/png/512/5023/premium/5023460.png?token=exp=1644262378~hmac=5a41c0417cac4f614522b959e1a106a2"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://images.unsplash.com/photo-1630610280030-da8fbc7ca25a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpbmclMjBwb25nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                    alt="ping-pong table"
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Ping Pong Score Keeper</p>
+              </header>
+              <div class="card-content">
+                <div class="content has-text-grey is-size-1">
+                  <span id="p1display">0</span> to <span id="p2display">0</span>
+                </div>
+                <label for="playto" class="label is-inline is-medium"
+                  >How high should we play?</label
+                >
+                <div class="select is-rounded">
+                  <select id="playTo">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <div class="buttons">
+                  <button id="p1button" class="button is-info is-full-width">
+                    +1 Player One
+                  </button>
+                  <button id="p2button" class="button is-primary is-full-width">
+                    +1 Player Two
+                  </button>
+                  <button id="reset" class="button is-danger is-full-width">
+                    Reset
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="app.js"></script>
+</html>
